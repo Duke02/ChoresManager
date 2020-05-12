@@ -2,6 +2,7 @@ import json
 import typing
 
 from chore import Chore
+from housemate import Housemate
 
 
 def get_chores(filepath: str = 'chores.json') -> typing.List[Chore]:
@@ -74,6 +75,10 @@ def get_chores_from_user(existing_chores: typing.List[Chore]) -> typing.List[Cho
     print_chores(existing_chores)
 
     return existing_chores
+
+
+def add_housemates(housemates: typing.List[Housemate]) -> typing.List[Housemate]:
+    pass
 
 
 def main():
